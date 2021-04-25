@@ -1,6 +1,6 @@
 {
    "name": "jtm",
-   "version": "0.0.1-rc",
+   "version": "0.0.2-rc",
    "type": "module",
    "description": "JS轻量级测试工具",
    "bin": "./bin/index.js",
