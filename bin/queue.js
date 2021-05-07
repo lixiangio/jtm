@@ -1,4 +1,5 @@
 import run from './run.js';
+import consoln from './consoln.js';
 
 export default async function (fullPath, container) {
 
@@ -9,7 +10,7 @@ export default async function (fullPath, container) {
   ]);
 
   for (const item of container.skip) {
-    console.log(`\n \x1b[33m▪ ${item.name}\x1b[30m`);
+    consoln.log(`\n \x1b[33m▪ ${item.name}\x1b[30m`);
   }
 
 }

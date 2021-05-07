@@ -1,4 +1,4 @@
-﻿import test from 'jtm';;
+﻿import test from 'jtm';
 
 test.before('x1.before', async t => {
 

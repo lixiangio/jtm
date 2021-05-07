@@ -3,13 +3,13 @@ import consoln from './consoln.js';
 
 export default async function (fullPath, queue) {
 
-   console.log(`\n\x1b[34m${fullPath}\x1b[30m`);
-   
+   consoln.log(`\n\x1b[34m${fullPath}\x1b[30m`);
+
    for (const item of queue) {
 
       const { name, func } = item;
 
-      console.log(`\n \x1b[32m» ${name}\x1b[30m`);
+      consoln.log(`\n \x1b[32m»» ${name}\x1b[30m`);
 
       const timestamp = Date.now();
 

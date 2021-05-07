@@ -1,4 +1,4 @@
-﻿import test from 'jtm';;
+﻿import test from 'jtm';
 
 test.before('s1.before', async t => {
 
@@ -15,6 +15,12 @@ test('hello', t => {
 
 
 test.skip('s1', t => {
+
+   t.ok(true);
+
+});
+
+test.skip('s2', t => {
 
    t.ok(true);
 

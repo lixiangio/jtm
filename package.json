@@ -1,12 +1,13 @@
 {
    "name": "jtm",
-   "version": "0.0.2-rc",
+   "version": "0.0.5-rc",
    "type": "module",
    "description": "JS轻量级测试工具",
    "bin": "./bin/index.js",
    "main": "./index.js",
-   "dependencies": {},
-   "devDependencies": {},
+   "dependencies": {
+      "jtm": "*"
+   },
    "scripts": {
       "test": "node ./bin/index.js"
    },

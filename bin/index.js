@@ -2,11 +2,25 @@
 
 import path from 'path';
 import argv from './argv.js';
-import getDate from './date.js';
 import loader from './loader.js';
 import test from '../index.js';
+import consoln from './consoln.js';
 
-console.log(`\n\x1b[30m»»»»»»»»»»»»»»» ${getDate()} «««««««««««««««`);
+function getDate() {
+
+  const nowDate = new Date()
+
+  const hours = nowDate.getHours();
+
+  const minutes = nowDate.getMinutes();
+
+  const seconds = nowDate.getSeconds();
+
+  return `${hours}:${minutes}:${seconds}`;
+
+};
+
+consoln.log(`\x1b[30m»»»»»»»»»»»»»»» ${getDate()} «««««««««««««««`);
 
 const cwd = process.cwd();
 
@@ -69,6 +83,8 @@ async function main() {
     }
 
   }
+
+  consoln.log('\n');
 
 }
 

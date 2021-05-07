@@ -1,4 +1,4 @@
-﻿import test from 'jtm';;
+﻿import test from 'jtm';
 
 test.before('test.before', async t => {
 
@@ -6,7 +6,7 @@ test.before('test.before', async t => {
 
 })
 
-test('deepEqual', async t => {
+test('deepEqual', t => {
 
    t.deepEqual({ a: 1, b: 2 }, { a: 1, b: 2 });
 
@@ -20,6 +20,8 @@ test('equal', async t => {
 })
 
 test('hello', async t => {
+
+   await t.sleep(3000);
 
    t.ok(true);
 
