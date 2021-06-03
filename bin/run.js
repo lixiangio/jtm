@@ -19,7 +19,7 @@ export default async function (fullPath, queue) {
 
       if (func.constructor.name === 'AsyncFunction') {
 
-         await func(stateAssert).then(data => {
+         await func(stateAssert).then(() => {
 
             if (stateAssert.state === true) {
 

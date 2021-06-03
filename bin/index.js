@@ -5,6 +5,7 @@ import argv from './argv.js';
 import loader from './loader.js';
 import test from '../index.js';
 import consoln from './consoln.js';
+import run from './run.js';
 
 function getDate() {
 
@@ -18,7 +19,7 @@ function getDate() {
 
   return `${hours}:${minutes}:${seconds}`;
 
-};
+}
 
 consoln.log(`\x1b[30m»»»»»»»»»»»»»»» ${getDate()} «««««««««««««««`);
 
@@ -70,7 +71,7 @@ async function main() {
               ...container.after
             ]);
             break;
-          };
+          }
 
         }
 
