@@ -1,22 +1,18 @@
 {
    "name": "jtm",
-   "version": "0.0.9",
+   "version": "1.0.4",
    "type": "module",
    "description": "JS轻量级测试工具",
    "bin": "./bin/index.js",
-   "main": "./index.js",
+   "main": "./symlink/index.js",
    "scripts": {
-      "test": "jtm"
+      "test": "node ./bin/index.js"
    },
    "author": "",
    "license": "ISC",
-   "directories": {
-      "lib": "lib",
-      "test": "test"
-   },
    "files": [
       "bin",
-      "index.js"
+      "symlink"
    ],
    "repository": {
       "type": "git"

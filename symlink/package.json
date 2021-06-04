@@ -1,0 +1,5 @@
+{
+  "name": "jtm",
+  "type": "module",
+  "main": "./index.js"
+}
