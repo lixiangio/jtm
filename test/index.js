@@ -1,4 +1,6 @@
-﻿import test from 'jtm';
+﻿/// <reference path="../types/index.d.ts" />
+
+import test from 'jtm';
 
 test.before('test.before', async t => {
 

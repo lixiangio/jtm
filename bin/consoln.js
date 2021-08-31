@@ -22,7 +22,6 @@ export default {
 
     stdout.clearLine();
     stdout.cursorTo(0);
-
     stdout.write(` \x1b[31m× ${name} \x1b[39m(${time}ms) ${message}\x1b[30m`);
 
   }
